@@ -1,7 +1,8 @@
 ---
 
 :project:
-  :use_exceptions: FALSE
+  :use_exceptions: TRUE # default
+  :use_mocks: TRUE # default
   :use_test_preprocessor: TRUE
   :use_auxiliary_dependencies: TRUE
   :build_root: build
