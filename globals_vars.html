@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Latest: Welcome to Latest&#39;s documentation!</title>
+<title>Latest: Globals</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -47,9 +47,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript" src="dynsections.js"></script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -68,6 +68,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li class="current"><a href="globals.html"><span>Globals</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li><a href="globals.html"><span>All</span></a></li>
+      <li><a href="globals_func.html"><span>Functions</span></a></li>
+      <li class="current"><a href="globals_vars.html"><span>Variables</span></a></li>
+    </ul>
+  </div>
 </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -83,32 +96,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div class="header">
-  <div class="headertitle">
-<div class="title">Welcome to Latest's documentation! </div>  </div>
-</div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Latest is program to assist you in finding the last modified file in a directory. I have created it for several purposes.</p>
-<h2>Goals</h2>
-<ul>
-<li>Improve my skill in C programming.<ul>
-<li>Create a fully functioning project.</li>
-<li>Create something that might be useful to some people.</li>
-<li>Develop using a test-driven development style of program. Use tools developed by the embedded division of Atomic Object (my employer), located at <a href="http://throwtheswitch.org/">Throw the Switch!</a>.</li>
-</ul>
+&#160;<ul>
+<li>EXCLUDE_LIST
+: <a class="el" href="list__dir_8c.html#ac79f3b1996614cdf8d6692736ace71af">list_dir.c</a>
+</li>
+<li>EXCLUDE_SIZE
+: <a class="el" href="list__dir_8c.html#a4fff9af95c51912401f73a116c21c06b">list_dir.c</a>
 </li>
 </ul>
-<p>To really see how it works, give it a try!</p>
-<h2>Compilation</h2>
-<p>By default, Latest is configured to build with <a href="http://clang.llvm.org/">Clang</a>. To build using <a href="http://gcc.gnu.org/">GCC</a>, comment out the tools section in <code>project.yml</code>. Then run the following: </p>
-<div class="fragment"><pre class="fragment">rake release</pre></div> <h2>Regression Testing</h2>
-<p>Regression testing is done using <a href="http://throwtheswitch.org/white-papers/ceedling-intro.html">Ceedling</a>, <a href="http://throwtheswitch.org/white-papers/cmock-intro.html">CMock</a>, and <a href="http://throwtheswitch.org/white-papers/unity-intro.html">Unity</a>. Run the test suite using the following: </p>
-<div class="fragment"><pre class="fragment">rake test:all</pre></div> <h2>Documentation</h2>
-<p>Documentation is created using Doxygen. Run the following to build it: </p>
-<div class="fragment"><pre class="fragment">rake docs
-open docs/build/html/index.html</pre></div> <h2>Todo</h2>
-<p>Please see the <a href="todo.html">Todo list</a>. </p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+  <Token>
+    <TokenIdentifier>
+      <Name>list_dir</Name>
+      <APILanguage>c</APILanguage>
+      <Type>func</Type>
+    </TokenIdentifier>
+    <Path>list__dir_8c.html</Path>
+    <Anchor>a96dc931b0a8aae9a55d726baf8f611db</Anchor>
+    <Abstract>Returns the listing of a directory.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>list_dir_file_select</Name>
+      <APILanguage>c</APILanguage>
+      <Type>func</Type>
+    </TokenIdentifier>
+    <Path>list__dir_8c.html</Path>
+    <Anchor>a32cee32410596f95bbbdbd8be9c56e02</Anchor>
+    <Abstract>Callback to determine whether file should be in the final array returned by scandir().</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>EXCLUDE_LIST</Name>
+      <APILanguage>c</APILanguage>
+      <Type>data</Type>
+    </TokenIdentifier>
+    <Path>list__dir_8c.html</Path>
+    <Anchor>ac79f3b1996614cdf8d6692736ace71af</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>EXCLUDE_SIZE</Name>
+      <APILanguage>c</APILanguage>
+      <Type>data</Type>
+    </TokenIdentifier>
+    <Path>list__dir_8c.html</Path>
+    <Anchor>a4fff9af95c51912401f73a116c21c06b</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>list_dir</Name>
+      <APILanguage>c</APILanguage>
+      <Type>func</Type>
+    </TokenIdentifier>
+    <Path>list__dir_8h.html</Path>
+    <Anchor>a96dc931b0a8aae9a55d726baf8f611db</Anchor>
+    <Abstract>Returns the listing of a directory.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>list_dir_file_select</Name>
+      <APILanguage>c</APILanguage>
+      <Type>func</Type>
+    </TokenIdentifier>
+    <Path>list__dir_8h.html</Path>
+    <Anchor>a32cee32410596f95bbbdbd8be9c56e02</Anchor>
+    <Abstract>Callback to determine whether file should be in the final array returned by scandir().</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>main</Name>
+      <APILanguage>c</APILanguage>
+      <Type>func</Type>
+    </TokenIdentifier>
+    <Path>main_8c.html</Path>
+    <Anchor>a0ddf1224851353fc92bfbff6f499fa97</Anchor>
+    <Abstract>Program entry point.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>utils_string_in_array</Name>
+      <APILanguage>c</APILanguage>
+      <Type>func</Type>
+    </TokenIdentifier>
+    <Path>utils_8c.html</Path>
+    <Anchor>aec66a4a337bdf798554b94e25a613eeb</Anchor>
+    <Abstract>Check if an array of strings contains a given string.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>utils_string_in_array</Name>
+      <APILanguage>c</APILanguage>
+      <Type>func</Type>
+    </TokenIdentifier>
+    <Path>utils_8h.html</Path>
+    <Anchor>aec66a4a337bdf798554b94e25a613eeb</Anchor>
+    <Abstract>Check if an array of strings contains a given string.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>todo</Name>
+      <APILanguage>unknown</APILanguage>
+    </TokenIdentifier>
+    <Path>todo.html</Path>
+  </Token>
+</Tokens>

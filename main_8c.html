@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Latest: Welcome to Latest&#39;s documentation!</title>
+<title>Latest: src/main.c File Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -47,9 +47,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript" src="dynsections.js"></script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -68,7 +68,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-</div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>Globals</span></a></li>
+    </ul>
+  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -83,32 +88,76 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+</div>
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Welcome to Latest's documentation! </div>  </div>
+<div class="title">src/main.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Latest is program to assist you in finding the last modified file in a directory. I have created it for several purposes.</p>
-<h2>Goals</h2>
-<ul>
-<li>Improve my skill in C programming.<ul>
-<li>Create a fully functioning project.</li>
-<li>Create something that might be useful to some people.</li>
-<li>Develop using a test-driven development style of program. Use tools developed by the embedded division of Atomic Object (my employer), located at <a href="http://throwtheswitch.org/">Throw the Switch!</a>.</li>
-</ul>
-</li>
-</ul>
-<p>To really see how it works, give it a try!</p>
-<h2>Compilation</h2>
-<p>By default, Latest is configured to build with <a href="http://clang.llvm.org/">Clang</a>. To build using <a href="http://gcc.gnu.org/">GCC</a>, comment out the tools section in <code>project.yml</code>. Then run the following: </p>
-<div class="fragment"><pre class="fragment">rake release</pre></div> <h2>Regression Testing</h2>
-<p>Regression testing is done using <a href="http://throwtheswitch.org/white-papers/ceedling-intro.html">Ceedling</a>, <a href="http://throwtheswitch.org/white-papers/cmock-intro.html">CMock</a>, and <a href="http://throwtheswitch.org/white-papers/unity-intro.html">Unity</a>. Run the test suite using the following: </p>
-<div class="fragment"><pre class="fragment">rake test:all</pre></div> <h2>Documentation</h2>
-<p>Documentation is created using Doxygen. Run the following to build it: </p>
-<div class="fragment"><pre class="fragment">rake docs
-open docs/build/html/index.html</pre></div> <h2>Todo</h2>
-<p>Please see the <a href="todo.html">Todo list</a>. </p>
-</div></div><!-- contents -->
+<div class="textblock"><code>#include &quot;<a class="el" href="list__dir_8h_source.html">list_dir.h</a>&quot;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for main.c:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="main_8c__incl.png" border="0" usemap="#src_2main_8c" alt=""/></div>
+<map name="src_2main_8c" id="src_2main_8c">
+<area shape="rect" id="node3" href="list__dir_8h.html" title="list_dir.h" alt="" coords="61,83,131,111"/></map>
+</div>
+</div>
+<p><a href="main_8c_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+<tr class="memdesc:a0ddf1224851353fc92bfbff6f499fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program entry point.  <a href="#a0ddf1224851353fc92bfbff6f499fa97"></a><br/></td></tr>
+</table>
+<hr/><h2>Function Documentation</h2>
+<a class="anchor" id="a0ddf1224851353fc92bfbff6f499fa97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Program entry point. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Add argument parsing with excepted arguments (--help, --version, etc.)</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Documentation on how to download and built.</dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>number of args </td></tr>
+    <tr><td class="paramname">list</td><td>of arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>exit code </dd></dl>
+
+<p>Definition at line <a class="el" href="main_8c_source.html#l00017">17</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>

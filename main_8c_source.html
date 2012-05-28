@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Latest: Welcome to Latest&#39;s documentation!</title>
+<title>Latest: src/main.c Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -47,9 +47,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript" src="dynsections.js"></script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -66,6 +66,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div>
@@ -85,30 +91,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Welcome to Latest's documentation! </div>  </div>
+<div class="title">src/main.c</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Latest is program to assist you in finding the last modified file in a directory. I have created it for several purposes.</p>
-<h2>Goals</h2>
-<ul>
-<li>Improve my skill in C programming.<ul>
-<li>Create a fully functioning project.</li>
-<li>Create something that might be useful to some people.</li>
-<li>Develop using a test-driven development style of program. Use tools developed by the embedded division of Atomic Object (my employer), located at <a href="http://throwtheswitch.org/">Throw the Switch!</a>.</li>
-</ul>
-</li>
-</ul>
-<p>To really see how it works, give it a try!</p>
-<h2>Compilation</h2>
-<p>By default, Latest is configured to build with <a href="http://clang.llvm.org/">Clang</a>. To build using <a href="http://gcc.gnu.org/">GCC</a>, comment out the tools section in <code>project.yml</code>. Then run the following: </p>
-<div class="fragment"><pre class="fragment">rake release</pre></div> <h2>Regression Testing</h2>
-<p>Regression testing is done using <a href="http://throwtheswitch.org/white-papers/ceedling-intro.html">Ceedling</a>, <a href="http://throwtheswitch.org/white-papers/cmock-intro.html">CMock</a>, and <a href="http://throwtheswitch.org/white-papers/unity-intro.html">Unity</a>. Run the test suite using the following: </p>
-<div class="fragment"><pre class="fragment">rake test:all</pre></div> <h2>Documentation</h2>
-<p>Documentation is created using Doxygen. Run the following to build it: </p>
-<div class="fragment"><pre class="fragment">rake docs
-open docs/build/html/index.html</pre></div> <h2>Todo</h2>
-<p>Please see the <a href="todo.html">Todo list</a>. </p>
-</div></div><!-- contents -->
+<a href="main_8c.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="list__dir_8h.html">list_dir.h</a>&quot;</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<a name="l00010"></a>00010 
+<a name="l00017"></a><a class="code" href="main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">00017</a> <span class="keywordtype">int</span> <a class="code" href="main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="Program entry point.">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>*argv[])
+<a name="l00018"></a>00018 {
+<a name="l00019"></a>00019         <span class="keywordtype">char</span> **filenames;
+<a name="l00020"></a>00020         <span class="keywordtype">int</span> count = <a class="code" href="list__dir_8c.html#a96dc931b0a8aae9a55d726baf8f611db" title="Returns the listing of a directory.">list_dir</a>(<span class="stringliteral">&quot;.&quot;</span>, &amp;filenames);
+<a name="l00021"></a>00021         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; count; ++i)
+<a name="l00022"></a>00022         {
+<a name="l00023"></a>00023                 puts(filenames[i]);
+<a name="l00024"></a>00024         }
+<a name="l00025"></a>00025 }
+</pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
