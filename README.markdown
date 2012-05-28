@@ -46,6 +46,14 @@ Documentation is created using Doxygen. Run the following to build it:
 	
 You may also visit [recently built documentation][latest-doc] on Github.
 
+Couldn't you...
+---------------
+
+just write this in bash or something? Uh, yeah:
+
+    ls -t
+	ls -t | head -1
+
 [Throw The Switch!]: http://throwtheswitch.org/
 [Clang]: http://clang.llvm.org/
 [GCC]: http://gcc.gnu.org/

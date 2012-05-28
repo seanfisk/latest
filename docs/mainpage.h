@@ -54,6 +54,14 @@
  * ----
  *
  * Please see the [Todo list][].
+
+ * Couldn't you...
+ * ---------------
+ *
+ * just write this in bash or something? Uh, yeah:
+ *
+ *     ls -t
+ *     ls -t | head -1
  *
  *
  * [Throw The Switch!]: http://throwtheswitch.org/
