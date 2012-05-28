@@ -1,8 +1,6 @@
 /**
  * @todo Add argument parsing with excepted arguments (--help, --version, etc.)
  *
- * @todo Upload to Github / Bitbucket.
- *
  * @todo Documentation on how to download and built.
  */
 
