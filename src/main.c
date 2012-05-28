@@ -1,8 +1,8 @@
 /**
- * @todo Sorting of files by last modified date.
- * @todo Reverse sorting of files by last modified date.
  * @todo Add argument parsing with excepted arguments (--help, --version, etc.)
+ *
  * @todo Upload to Github / Bitbucket.
+ *
  * @todo Documentation on how to download and built.
  */
 
@@ -10,6 +10,12 @@
 
 #include <stdio.h>
 
+/**
+ * Program entry point.
+ * @param argc number of args
+ * @param list of arguments
+ * @return exit code
+ */
 int main(int argc, char*argv[])
 {
 	char **filenames;

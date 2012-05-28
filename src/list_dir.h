@@ -15,6 +15,8 @@ struct dirent **namelist;
  * @return number of files
  *
  * @todo Sorting of files by last modified date.
+ *
+ * @todo Reverse sorting of files by last modified date.
  */
 int list_dir(const char path[], char ***filenames);
 
