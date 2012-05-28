@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Latest : Find your latest files, at the speed of light! " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Latest</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/seanfisk/latest">View on GitHub</a>
+
+          <h1 id="project_title">Latest</h1>
+          <h2 id="project_tagline">Find your latest files, at the speed of light! </h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/seanfisk/latest/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/seanfisk/latest/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>Latest is program to assist you in finding the last modified file in a
+directory. I have created it for several purposes.</p>
+
+<h2>Goals</h2>
+
+<ul>
+<li>Improve my skill in C programming.</li>
+<li>Create a fully functioning project.</li>
+<li>Create something that might be useful to some people.</li>
+<li>Develop using a test-driven development style of program.  Use tools developed
+by the embedded division of Atomic Object (my employer), located at
+<a href="http://throwtheswitch.org/">Throw the Switch!</a>.</li>
+</ul><p>To really see how it works, give it a try!</p>
+
+<h2>Compilation</h2>
+
+<p>By default, Latest is configured to build with <a href="http://clang.llvm.org/">Clang</a>. To build using
+<a href="http://gcc.gnu.org/">GCC</a>, comment out the tools section in <code>project.yml</code>. Then run the following:</p>
+
+<pre><code>rake release
+</code></pre>
+
+<h2>Regression Testing</h2>
+
+<p>Regression testing is done using <a href="http://throwtheswitch.org/white-papers/ceedling-intro.html">Ceedling</a>, <a href="http://throwtheswitch.org/white-papers/cmock-intro.html">CMock</a>, and <a href="http://throwtheswitch.org/white-papers/unity-intro.html">Unity</a>. Run the
+test suite using the following:</p>
+
+<pre><code>rake test:all
+</code></pre>
+
+<h2>Documentation</h2>
+
+<p>Documentation is created using Doxygen. Run the following to build it:</p>
+
+<pre><code>rake docs
+open docs/build/html/index.html
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Latest maintained by <a href="https://github.com/seanfisk">seanfisk</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
