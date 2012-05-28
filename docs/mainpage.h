@@ -10,21 +10,28 @@
  * - Improve my skill in C programming.
  * - Create a fully functioning project.
  * - Create something that might be useful to some people.
- *
  * - Develop using a test-driven development style of program.  Use tools
  *   developed by the embedded division of Atomic Object (my employer), located
- *   at [Throw the Switch!][throw-the-switch].
+ *   at [Throw the Switch!][].
  *
  * To really see how it works, give it a try!
  *
  * Compilation
  * -----------
  *
- * By default, Latest is configured to build with
- * [Clang][clang]. To build using [GCC][gcc], comment out the tools
- * section in `project.yml`. Then run the following:
+ * By default, Latest is configured to build with [Clang][]. To build using
+ * [GCC][], comment out the tools section in `project.yml`. Then run the
+ * following:
  *
  *     rake release
+ *
+ * Regression Testing
+ * ------------------
+ *
+ * Regression testing is done using [Ceedling][], [CMock][], and [Unity][]. Run
+ * the test suite using the following:
+ *
+ *     rake test:all
  *
  * Documentation
  * -------------
@@ -37,11 +44,14 @@
  * Todo
  * ----
  *
- * Please see the [Todo list][todo].
+ * Please see the [Todo list][].
  *
  *
- * [throw-the-switch]: http://throwtheswitch.org/
- * [clang]: http://clang.llvm.org/
- * [gcc]: http://gcc.gnu.org/
- * [todo]: todo.html
+ * [Throw The Switch!]: http://throwtheswitch.org/
+ * [Clang]: http://clang.llvm.org/
+ * [GCC]: http://gcc.gnu.org/
+ * [Todo list]: todo.html
+ * [Ceedling]: http://throwtheswitch.org/white-papers/ceedling-intro.html
+ * [CMock]: http://throwtheswitch.org/white-papers/cmock-intro.html
+ * [Unity]: http://throwtheswitch.org/white-papers/unity-intro.html
  */
