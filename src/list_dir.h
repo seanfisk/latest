@@ -13,6 +13,8 @@ struct dirent **namelist;
  * @param path path of directory to list
  * @param filenames address of array in which to place filenames (malloc'd)
  * @return number of files
+ *
+ * @todo Sorting of files by last modified date.
  */
 int list_dir(const char path[], char ***filenames);
 
