@@ -19,7 +19,7 @@ int list_dir(const char path[], char ***filenames);
 /**
  * Callback to determine whether file should be in the final array returned by
  * scandir().
- * @param direct the directory entry
+ * @param dirent the directory entry
  * @return boolean indicating whether the entry should be included
  */
 int list_dir_file_select(struct dirent *entry);
