@@ -13,6 +13,13 @@ Goals
 
 To really see how it works, give it a try!
 
+Download
+--------
+
+Grab the source code from the [Latest Github page][latest-src].
+
+    git clone https://seanfisk@github.com/seanfisk/latest.git
+
 Compilation
 -----------
 
@@ -36,6 +43,8 @@ Documentation is created using Doxygen. Run the following to build it:
 
     rake docs
     open docs/build/html/index.html
+	
+You may also visit [recently built documentation][latest-doc] on Github.
 
 [Throw The Switch!]: http://throwtheswitch.org/
 [Clang]: http://clang.llvm.org/
@@ -43,3 +52,5 @@ Documentation is created using Doxygen. Run the following to build it:
 [Ceedling]: http://throwtheswitch.org/white-papers/ceedling-intro.html
 [CMock]: http://throwtheswitch.org/white-papers/cmock-intro.html
 [Unity]: http://throwtheswitch.org/white-papers/unity-intro.html
+[latest-src]: https://github.com/seanfisk/latest
+[latest-doc]: http://seanfisk.github.com/latest/
