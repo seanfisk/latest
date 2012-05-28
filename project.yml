@@ -19,6 +19,8 @@
 #  :executable: .out
 
 :paths:
+  :include:
+    - /usr/include
   :test:
     - +:test/**
     - -:test/support
@@ -40,10 +42,14 @@
     - TEST
 
 :cmock:
+  :mock_prefix: mock_
+  :treat_externs: :include
   :when_no_prototypes: :warn
   :enforce_strict_ordering: TRUE
   :plugins:
     - :ignore
+    # - :array
+    # - :cexception
   :treat_as:
     uint8:    HEX8
     uint16:   HEX16
@@ -62,6 +68,7 @@
     :executable: clang
     :name: Clang
     :arguments:
+      - -DTEST
       - -I"$": COLLECTION_PATHS_TEST_SUPPORT_SOURCE_INCLUDE_VENDOR
       - -c ${1} # source code input file
       - -o ${2} # object file output
@@ -69,6 +76,7 @@
     :executable: clang
     :name: Clang
     :arguments:
+      - -DTEST
       - ${1} # list of object files to link
       - -o ${2} # executable file output
   :test_file_preprocessor:
@@ -76,6 +84,7 @@
     :name: Clang
     :arguments:
       - -E
+      - -DTEST
       - -I"$": COLLECTION_PATHS_TEST_SUPPORT_SOURCE_INCLUDE_VENDOR
       - ${1} # source code input files
       - -o ${2} # object file output

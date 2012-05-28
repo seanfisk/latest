@@ -4,8 +4,10 @@
 
 int main(int argc, char*argv[])
 {
-	// puts(hello_world());
-	int count;
-	char *file = list_dir(".", &count);
-	puts(file);
+	char **filenames;
+	int count = list_dir(".", &filenames);
+	for(int i = 0; i < count; ++i)
+	{
+		puts(filenames[i]);
+	}
 }
