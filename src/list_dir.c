@@ -5,6 +5,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+#include <stdio.h>
+
 static char *EXCLUDE_LIST[] = {".", ".."};
 static const unsigned int EXCLUDE_SIZE = 2;
 
@@ -21,8 +23,8 @@ int list_dir(const char path[], char ***filenames)
 	(*filenames) = (char **)malloc(sizeof(char *) * count);
 	for(int i = 0; i < count; ++i)
 	{
-		//                V suppress warning
-		(*filenames)[i] = (char *) &(namelist[i]->d_name);
+		(*filenames)[i] = (char *) malloc(sizeof(char) * strlen(namelist[i]->d_name));
+		strcpy((*filenames)[i], namelist[i]->d_name);
 		free(namelist[i]);
 	}
 	free(namelist);

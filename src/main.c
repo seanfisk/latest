@@ -7,6 +7,7 @@
 #include "list_dir.h"
 
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * Program entry point.
@@ -21,5 +22,7 @@ int main(int argc, char*argv[])
 	for(int i = 0; i < count; ++i)
 	{
 		puts(filenames[i]);
+		free(filenames[i]);
 	}
+	free(filenames);
 }
